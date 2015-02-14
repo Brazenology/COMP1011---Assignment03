@@ -1,8 +1,7 @@
 /**
  * @author Brendan Kallio
  *Abstract Planet Class of COMP1011 - Assignment 3.
- *Generates a hero's abilities, determines if his/her hit
- *attempt is successful, and calculates the damage dealt.
+ *Creates a template for a planet with variables name, diameter and mass.
  *@Modified February 14, 2015.
  */
 public abstract class Planet {
@@ -78,6 +77,8 @@ public abstract class Planet {
 	
 	@Override
 	public String toString() {
-		return _name + _diameter + _mass;
+		return "Planet Name: " + _name + "\n" +
+			   "Diameter: " + _diameter + "\n" +
+			   "Mass: " + _mass;
 	}
 }
