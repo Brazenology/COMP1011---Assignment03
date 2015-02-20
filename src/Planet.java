@@ -5,7 +5,7 @@
  *@Modified February 14, 2015.
  */
 public abstract class Planet {
-	//INSTANCE VARIABLES
+	//Instance Variables
 	private String _name;
 	private double _diameter;
 	private double _mass;
@@ -14,7 +14,7 @@ public abstract class Planet {
 	private int _ringCount;
 	private int _moonCount;
 	
-	//-----------------GETTERS--------------------------
+	//-----------------------Public Properties--------------------------
 	public String get_name() {
 		return _name;
 	}
@@ -43,7 +43,6 @@ public abstract class Planet {
 		return _moonCount;
 	}
 	
-	//-----------------------SETTERS--------------------------
 	public void set_orbitalPeriod(double _orbitalPeriod) {
 		this._orbitalPeriod = _orbitalPeriod;
 	}
@@ -60,7 +59,7 @@ public abstract class Planet {
 		this._moonCount = _moonCount;
 	}
 	
-	//CONSTRUCTOR
+	//-------------------------CONSTRUCTOR---------------------------------
 	public Planet (String name, double diameter, double mass) {
 		this._name = name;
 		this._diameter = diameter;
@@ -70,8 +69,7 @@ public abstract class Planet {
 	//Overridden public method toString
 	@Override
 	public String toString() {
-		return 
-			   "Planet Name   : " + _name + "\n" +
+		return "Planet Name   : " + _name + "\n" +
 			   "Diameter      : " + _diameter + "\n" +
 			   "Mass          : " + _mass;
 	}
