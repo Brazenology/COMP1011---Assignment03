@@ -67,11 +67,12 @@ public abstract class Planet {
 		this._mass = mass;
 	}
 	
-	//Overidden public method toString
+	//Overridden public method toString
 	@Override
 	public String toString() {
-		return "Planet Name: " + _name + "\n" +
-			   "Diameter: " + _diameter + "\n" +
-			   "Mass: " + _mass;
+		return 
+			   "Planet Name   : " + _name + "\n" +
+			   "Diameter      : " + _diameter + "\n" +
+			   "Mass          : " + _mass;
 	}
 }
