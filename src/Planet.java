@@ -19,11 +19,9 @@ public abstract class Planet {
 		return _name;
 	}
 
-
 	public double get_orbitalPeriod() {
 		return _orbitalPeriod;
 	}
-
 
 	public double get_rotationPeriod() {
 		return _rotationPeriod;
@@ -33,16 +31,13 @@ public abstract class Planet {
 		return _ringCount;
 	}
 
-
 	public double get_diameter() {
 		return _diameter;
 	}
 
-
 	public double get_mass() {
 		return _mass;
 	}
-
 
 	public int get_moonCount() {
 		return _moonCount;
@@ -53,16 +48,13 @@ public abstract class Planet {
 		this._orbitalPeriod = _orbitalPeriod;
 	}
 
-
 	public void set_rotationPeriod(double _rotationPeriod) {
 		this._rotationPeriod = _rotationPeriod;
 	}
 
-
 	public void set_ringCount(int _ringCount) {
 		this._ringCount = _ringCount;
 	}
-
 
 	public void set_moonCount(int _moonCount) {
 		this._moonCount = _moonCount;
@@ -75,6 +67,7 @@ public abstract class Planet {
 		this._mass = mass;
 	}
 	
+	//Overidden public method toString
 	@Override
 	public String toString() {
 		return "Planet Name: " + _name + "\n" +

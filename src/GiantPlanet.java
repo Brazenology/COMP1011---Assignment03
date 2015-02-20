@@ -6,7 +6,7 @@
  *@Modified February 14, 2015.
  */
 public class GiantPlanet extends Planet {
-	String _type;
+	private String _type;
 	
 	public GiantPlanet(String name, double diameter, double mass, String type) {
 		super(name, diameter, mass);
@@ -14,7 +14,6 @@ public class GiantPlanet extends Planet {
 	}
 	
 	public boolean hasMoons() {
-		
 		if (get_moonCount() > 0) {
 			return true;	
 		}
